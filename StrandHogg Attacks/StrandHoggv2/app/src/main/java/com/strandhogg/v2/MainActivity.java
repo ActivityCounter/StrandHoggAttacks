@@ -25,8 +25,8 @@ public class MainActivity extends AppCompatActivity {
         minimizedIntent.setPackage(victimPackageName);
 
         minimizedIntent.addCategory(CATEGORY_LAUNCHER);  //Set the category to mimic launcher
-        minimizedIntent.setFlags(Intent.FLAG_ACTIVITY_EXCLUDE_FROM_RECENTS); // Exclude the started instance from the recents apps list
-        minimizedIntent.setFlags(270532608); // This is the Launcher flag
+        minimizedIntent.setFlags(FLAG_ACTIVITY_NEW_TASK | FLAG_ACTIVITY_RESET_TASK_IF_NEEDED
+                | FLAG_RECEIVER_FOREGROUND | FLAG_RECEIVER_VISIBLE_TO_INSTANT_APPS); // Launcher Flags
 
         // Start Activity for result
         startActivityForResult(minimizedIntent, 0);
