@@ -7,6 +7,10 @@ import android.content.Intent;
 import android.os.Bundle;
 
 import static android.content.Intent.CATEGORY_LAUNCHER;
+import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
+import static android.content.Intent.FLAG_ACTIVITY_RESET_TASK_IF_NEEDED;
+import static android.content.Intent.FLAG_RECEIVER_FOREGROUND;
+import static android.content.Intent.FLAG_RECEIVER_VISIBLE_TO_INSTANT_APPS;
 
 public class MainActivity extends AppCompatActivity {
 
